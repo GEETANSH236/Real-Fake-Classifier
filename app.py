@@ -7,7 +7,7 @@ import base64
 def get_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
-img_base64 = get_base64(r"C:\Users\gtiwa\Desktop\Ai\FakeAi\cnn.png")
+img_base64 = get_base64(r"cnn.png")
 
 # =================================================
 # PAGE CONFIG
@@ -300,3 +300,4 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
+
