@@ -151,7 +151,7 @@ st.markdown(
 # =================================================
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(r"C:\Users\gtiwa\Desktop\Ai\FakeAi\bestatend.h5")
+    return tf.keras.models.load_model(r"bestatend.h5")
 
 
 model = load_model()
@@ -300,4 +300,5 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
+
 
