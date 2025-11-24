@@ -56,7 +56,7 @@ st.markdown("<div class='sub'>Detect if an image is <b>AI-generated</b> or <b>Hu
 # ===============================================
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model(r"C:\Users\gtiwa\Desktop\Ai\FakeAi\bestatend.h5")
+    model = tf.keras.models.load_model(r"bestatend.h5")
     return model
 
 model = load_model()
@@ -116,3 +116,4 @@ if uploaded_files:
                         """,
                         unsafe_allow_html=True
                     )
+
